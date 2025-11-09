@@ -49,7 +49,7 @@ cd multi-linear-regression-car-prices
 pip install -r requirements.txt
 python src/linear_regression.py
 ```
-Para reproduzir em Google Colab, acesse [aqui](https://colab.research.google.com/github/felipetp-ctrl/multi-linear-regression-car-prices/blob/main/notebooks/exploratory.ipynb)!
+Para reproduzir em Google Colab, acesse aqui! [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/felipetp-ctrl/multi-linear-regression-car-prices/blob/main/notebooks/exploratory.ipynb)
 
 ## Resultados e Gráficos
 
