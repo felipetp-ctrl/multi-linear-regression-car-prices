@@ -9,7 +9,7 @@ sns.set_theme()
 
 # 1) CARREGAMENTO E INSPEÇÃO INICIAL DOS DADOS
 # Lê o arquivo CSV. Ajuste o caminho conforme necessário.
-raw_data = pd.read_csv(r'C:\Users\evacl\OneDrive - Grupo Marista\2 - Estudos Paralelos\Data Science Bootcamp\Programming\Data science bootcamp\Linear Regression\Practical examples\1.04. Real life example - Data Science Bootcamp.csv')
+raw_data = pd.read_csv('data/raw/1.04. Real life example - Data Science Bootcamp.csv')
 print(raw_data.head())
 
 # Remove a coluna 'Model' (neste dataset, costuma não ajudar no modelo e pode aumentar dimensionalidade)
@@ -65,7 +65,7 @@ sns.histplot(data_4['Year'], kde = True)
 
 # Reseta o índice após remoções sucessivas
 df_cln = data_4.reset_index(drop=True)
-print(df_cln.describe(include='all'))
+df_cln.describe(include='all')
 
 # 3) ANÁLISE EXPLORATÓRIA: RELAÇÃO ENTRE VARIÁVEIS NUMÉRICAS E O PREÇO
 # Gráficos de dispersão para ver relações e possíveis linearidades
@@ -99,8 +99,8 @@ plt.show()
 # Remove a coluna Price original para trabalhar apenas com o log_price como alvo
 df_cln = df_cln.drop(['Price'], axis = 1)
 
-# Visualiza nomes de colunas
-print(df_cln.columns.values)
+# Visualiza nomes de colunas (em notebook aparece; em script, use print)
+df_cln.columns.values
 
 # 5) MULTICOLINEARIDADE (VIF)
 # VIF (Variance Inflation Factor) mede inflar variância por colinearidade. VIF alto indica colinearidade.
