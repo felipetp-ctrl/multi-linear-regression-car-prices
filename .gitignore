@@ -1,0 +1,19 @@
+# Bytecode / cache
+__pycache__/
+*.py[cod]
+
+# Ambientes virtuais
+.venv/
+venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Dados brutos
+data/raw/*
+!data/raw/README.md
+
+# Sistema/OS
+.DS_Store
+Thumbs.db
